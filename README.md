@@ -10,4 +10,4 @@ TamperMonkey extension should offer installation screen.
 [Demo 2](https://raw.githubusercontent.com/greenscreens-io/tampermonkey/master/demo2.user.js)
 
 ----------
-&copy; Green Screens Ltd. 2015. - 2018.
+&copy; Green Screens Ltd. 2015. - 2019.
