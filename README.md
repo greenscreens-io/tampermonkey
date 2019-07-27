@@ -1,4 +1,4 @@
-# Scritps for Tampermonkey browsers extension
+# Scripts for Tampermonkey browsers extension
 
 This are sample scripts showing integration with Green Screens Web Terminal.
 
