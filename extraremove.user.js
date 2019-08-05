@@ -42,6 +42,7 @@
             return true;
         });
     }
+    tid = setInterval(clear, 5000);
     document.addEventListener("DOMContentLoaded", clear);
 
 })();
