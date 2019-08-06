@@ -3,7 +3,7 @@
 // @namespace      GreenScreens
 // @description    Stop auto play videos and audios
 // @copyright      2017+, Tom
-// @version        1.0
+// @version        1.1
 // @license        BSD
 // @author         Green Screens Ltd.
 // @homepageURL    https://www.greenscreens.io/
