@@ -8,8 +8,8 @@
 // @author         Green Screens Ltd.
 // @homepageURL    https://www.greenscreens.io/
 // @supportURL     https://github.com/greenscreens-io/tampermonkey/issues
-// @updateURL      https://raw.githubusercontent.com/greenscreens-io/tampermonkey/master/autoplay.user.js
-// @downloadURL    https://raw.githubusercontent.com/greenscreens-io/tampermonkey/master/autoplay.user.js
+// @updateURL      https://raw.githubusercontent.com/greenscreens-io/tampermonkey/master/extraremove.user.js
+// @downloadURL    https://raw.githubusercontent.com/greenscreens-io/tampermonkey/master/extraremove.user.js
 // @match          http*://*/*
 // @exclude        http*://localhost*
 // @exclude        http*://*greenscreens.io*
