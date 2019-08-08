@@ -3,7 +3,7 @@
 // @namespace      GreenScreens
 // @description    Stop auto play videos and audios
 // @copyright      2017+, Tom
-// @version        1.1
+// @version        1.2
 // @license        BSD
 // @author         Green Screens Ltd.
 // @homepageURL    https://www.greenscreens.io/
@@ -33,10 +33,15 @@
             tid = setInterval(clear, 5000);
         }
         document.querySelectorAll('video, audio').forEach(function(v){
-            if (!v.isPaused) {
-              v.pause();
-              v.isPaused = true;
+            if ((v.lastTime || 0) < v.currentTime) {
+                v.volume=0;
+                v.muted=true;
+                v.loop=false;
+                v.autoplay=false;
+                v.defaultMuted=true;              
+                v.pause();
             }
+            v.lastTime = v.currentTime;
             return true;
         });
     }
