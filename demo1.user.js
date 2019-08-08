@@ -23,7 +23,7 @@
     // will execute when terminal is connected
     function onTerminal() {
         // show notification message when terminal starts
-        Tn5250.Prompts.notify('Welcome to 5250 Terminal');
+        Tn5250.Dialogs.notify('Welcome to 5250 Terminal');
     }
     
     // register Web Terminal start event

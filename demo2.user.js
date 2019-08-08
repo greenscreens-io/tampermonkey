@@ -77,9 +77,9 @@
      
     function onTerminal() {
         document.addEventListener("keydown", onShortcut);
-        Tn5250.Prompts.notify('Screen extract shortcut added ALT + E');
-        // NOTE: Custom menu item available as of 3.0.8.  
-        Tn5250.Prompts.initContext(null, {test : {name:'Test', callback : onTest}});        
+        Tn5250.Dialogs.notify('Screen extract shortcut added ALT + E');
+        // NOTE: Custom menu item available as of 3.0.8.
+        Tn5250.Context.initContext(null, {test : {name:'Test', callback : onTest}});        
     }
 
     // start script initialization when web terminal connected
