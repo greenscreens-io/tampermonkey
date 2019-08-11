@@ -3,7 +3,7 @@
 // @namespace      GreenScreens
 // @description    Removes embed and iframe tags
 // @copyright      2017+, Tom
-// @version        1.1
+// @version        1.2
 // @license        BSD
 // @author         Green Screens Ltd.
 // @homepageURL    https://www.greenscreens.io/
@@ -27,7 +27,7 @@
 
 (function() {
     'use strict';
-    var qry = 'iframe, #google_center_div, .billboard, .banner';
+    var qry = 'iframe, .billboard, .banner';
     var tid = 0;
     function clear() {
         if (tid===0) {
@@ -38,7 +38,9 @@
             return true;
         });
         document.querySelectorAll('embed').forEach(function(v){
-            v.remove();
+            if (v.src.indexOf('.pdf')<0) {
+                v.remove();
+            }
             return true;
         });
     }
